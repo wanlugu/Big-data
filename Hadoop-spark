@@ -1,0 +1,6 @@
+# noSQL
+document, graph, queries
+# hadoop, spark
+frameworks for data distributing and retrieving
+hadoop focuses on diksed based and a map-reduced schema
+both accommodate multiple types of data and by parallel workers
