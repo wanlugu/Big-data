@@ -1,6 +1,21 @@
+# Online learning
+1. Your data doesn’t fit into memory
+2. You expect the distribution of your data to morph or drift over time
+3. Your data is a function of time (e.g. stock prices)
+offline learning: batch
+online learning: stochatic
 # noSQL
 document, graph, queries
 # hadoop, spark
 frameworks for data distributing and retrieving
 hadoop focuses on diksed based and a map-reduced schema
 both accommodate multiple types of data and by parallel workers
+
+
+# mapreduce, multi-machine or multi-core in single machine
+split into n subsets, assign to n machineas, then combine together, nx speed up
+summation over training set
+Limitation: only for batch, issue with small file, slow processing, latency, no catching, no real-time data stream, no delta iteration
+
+# spark
+Limitation: no file management system, no real-time processing, expensive (large store size), small file (store in zip, need uncompressed)
