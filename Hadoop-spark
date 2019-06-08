@@ -6,11 +6,15 @@ offline learning: batch
 online learning: stochatic
 # noSQL
 document, graph, queries
-# hadoop, spark
-frameworks for data distributing and retrieving
-hadoop focuses on diksed based and a map-reduced schema
-both accommodate multiple types of data and by parallel workers
 
+########## hadoop, spark ###########
+frameworks for data distributing and retrieving
+hadoop focuses on diksed based and a map-reduced schema, both accommodate multiple types of data and by parallel workers
+# The Hadoop Distributed File System: A Storage System for Big Data
+HDFS split file across nodes for parallel access: 
+two key components - 
+1. NameNode for metadata (one per cluster), 
+2. DataNode for block storage (one per machine) listens to NameNode for block creation, deletion, replication (fault tolerance, data locality)
 
 # mapreduce, multi-machine or multi-core in single machine
 split into n subsets, assign to n machineas, then combine together, nx speed up
