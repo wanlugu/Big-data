@@ -23,7 +23,7 @@ Enable multiple applications on beyond HDFS
 # mapreduce, multi-machine or multi-core in single machine
 split into n subsets, assign to n machineas, then combine together, nx speed up
 summation over training set
-Limitation: only for batch, issue with small file, slow processing, latency, no catching, no real-time data stream, no delta iteration
-process: map node - shuffle and sort - reduce
+Limitation: only for batch, only for indenpendent tasks, not interactive analysis, issue with small file, slow processing, latency, no catching, no real-time data streaming, no delta iteration
+process: map node (parallelization on input) - shuffle and sort (parallelization data sorting)- reduce (parallelization over data group)
 # spark
 Limitation: no file management system, no real-time processing, expensive (large store size), small file (store in zip, need uncompressed)
