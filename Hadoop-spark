@@ -25,5 +25,7 @@ split into n subsets, assign to n machineas, then combine together, nx speed up
 summation over training set
 Limitation: only for batch, only for indenpendent tasks, not interactive analysis, issue with small file, slow processing, latency, no catching, no real-time data streaming, no delta iteration
 process: map node (parallelization on input) - shuffle and sort (parallelization data sorting)- reduce (parallelization over data group)
+Not suitable if: small datasete, advanced algorithms (require special hardware), infrastructure replacements (hadoop not good for storage),
+task parallel, random data access
 # spark
 Limitation: no file management system, no real-time processing, expensive (large store size), small file (store in zip, need uncompressed)
